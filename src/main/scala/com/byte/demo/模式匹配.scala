@@ -1,4 +1,4 @@
-package com.byte.demo
+package com_byte.demo
 
 import scala.io.StdIn
 

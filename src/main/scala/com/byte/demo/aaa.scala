@@ -1,4 +1,5 @@
-package com.byte.demo
+package com_byte.demo
+
 import org.apache.spark.sql.expressions.UserDefinedFunction
 import org.apache.spark.sql.functions.udf
 

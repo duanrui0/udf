@@ -1,4 +1,4 @@
-package com.byte.day01
+package com_byte.day01
 
 import org.apache.hadoop.hive.ql.exec.UDF
 import org.apache.hadoop.io.Text

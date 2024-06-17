@@ -4,7 +4,7 @@ import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.udf
 
-object HiveUDFInSparkApp {
+object GetUrlDemo {
   def main(args: Array[String]): Unit = {
     Logger.getLogger("org").setLevel(Level.WARN)
 
@@ -14,10 +14,10 @@ object HiveUDFInSparkApp {
       .getOrCreate()
 
     // 注册 Hive 自定义 UDF
-    spark.sql("CREATE TEMPORARY FUNCTION my_udf AS 'com.byte.day01.time2time'")
+    spark.sql("CREATE TEMPORARY FUNCTION my_udf AS 'com.byte.day01.get_url'")
 
     // 使用 Hive 自定义 UDF
-    val df = spark.sql("SELECT my_udf('06/15/2032 16:34:12') ")
+    val df = spark.sql("SELECT my_udf('https://www.baidu.com fda复合地基凯撒') ")
 
 
     df.show()

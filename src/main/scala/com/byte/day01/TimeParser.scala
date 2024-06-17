@@ -1,3 +1,5 @@
+package com.byte.day01
+
 import org.apache.hadoop.hive.ql.exec.UDF
 
 import java.text.SimpleDateFormat

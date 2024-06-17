@@ -1,4 +1,4 @@
-package com.byte.demo
+package com_byte.demo
 
 class test {
   def main(args: Array[String]): Unit = {
